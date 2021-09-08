@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import {Link, withRouter } from 'react-router-dom'
 
 const Header = styled.header`
-    position:fixed;
+    /* position:fixed; */
     border:1px solid red;
     padding: 10px;
 `

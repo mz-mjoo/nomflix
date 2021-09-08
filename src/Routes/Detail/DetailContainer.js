@@ -17,7 +17,7 @@ export default class DetailContainer extends React.Component {
     }
 
     async componentDidMount() {
-        const { match : { params : { id } }, history : { push }, location : {pathname} } = this.props;
+        const { match : { params : { id } }, history : { push }, location : { pathname } } = this.props;
         const parsedId = parseInt(id);
         const { isMovie } = this.state;
 
@@ -49,9 +49,6 @@ export default class DetailContainer extends React.Component {
                 result
             })
         }
-
-
-        // console.log(parsedId);
     }
 
     render() {
