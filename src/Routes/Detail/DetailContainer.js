@@ -30,11 +30,11 @@ export default class DetailContainer extends React.Component {
         try {
             if ( isMovie ) {
                 console.log('영화');
-                ({data : result } = await movieApi.movieDetail(parsedId));
+                ({ data : result } = await movieApi.movieDetail(parsedId));
 
             } else {
                 console.log('티비');
-                ({data : result } = await tvApi.showDetail(parsedId));
+                ({ data : result } = await tvApi.showDetail(parsedId));
             }
 
             
@@ -52,7 +52,7 @@ export default class DetailContainer extends React.Component {
     }
 
     render() {
-        const {result,error,loading} = this.state;
+        const { result, error, loading } = this.state;
         console.log('check',this.props);
         console.log('state check',this.state);
         return <DetailPresenter result={result} error={error} loading={loading} />
